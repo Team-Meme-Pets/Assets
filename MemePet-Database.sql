@@ -27,6 +27,6 @@ CREATE TABLE Location(
 username VARCHAR(20) NOT NULL,
 latitude numeric(9,6),
 longitude numeric(9,6),
-PRIMARY KEY(username)
+PRIMARY KEY(username),
 FOREIGN KEY(username) REFERENCES UserAccount(username) ON DELETE CASCADE
 );
