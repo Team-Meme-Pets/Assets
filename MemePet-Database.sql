@@ -6,13 +6,13 @@ password VARCHAR(256) NOT NULL,
 email VARCHAR(30),
 created_on TIMESTAMP NOT NULL,
 last_login TIMESTAMP,
-PRIMARY KEY (`username`)
+PRIMARY KEY (username)
 );
 
 CREATE TABLE PetModel(
 pet_name VARCHAR(20) UNIQUE NOT NULL,
 import_on TIMESTAMP NOT NULL,
-PRIMARY KEY (`pet_name`)
+PRIMARY KEY (pet_name)
 );
 
 CREATE TABLE HavePet(
