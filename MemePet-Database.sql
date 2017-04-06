@@ -3,7 +3,7 @@
 CREATE TABLE UserAccount(
 user_id serial PRIMARY KEY,
 username VARCHAR(20) UNIQUE NOT NULL,
-password VARCHAR(255) NOT NULL,
+password VARCHAR(256) NOT NULL,
 email VARCHAR(355),
 created_on TIMESTAMP NOT NULL,
 last_login TIMESTAMP
